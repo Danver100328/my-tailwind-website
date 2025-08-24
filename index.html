@@ -3,213 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Danver's Restaurant</title>
+  <title>Danver's Pizza</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Merriweather', serif; /* vintage-style font */
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
-<body class="font-sans bg-gradient-to-br from-blue-50 via-white to-blue-100 text-gray-800 min-h-screen flex flex-col">
+<body class="font-serif bg-gradient-to-b from-[#3E2C1C] via-[#2A1F14] to-[#1B120C] text-[#F4EBD0] min-h-screen flex flex-col">
 
   <!-- Header -->
-  <header class="bg-blue-700 text-white">
-    <nav class="container mx-auto flex justify-between items-center px-4 py-4">
-      <a href="#home" class="text-2xl font-bold">Danver's Restaurant</a>
-      <ul class="flex space-x-8 text-base">
-        <li><a href="#home" class="hover:text-amber-300">Home</a></li>
-        <li><a href="#about" class="hover:text-amber-300">About</a></li>
-        <li><a href="#menu" class="hover:text-amber-300">Menu</a></li>
-        <li><a href="#contact" class="hover:text-amber-300">Contact</a></li>
+  <header class="bg-[#1B120C] border-b-4 border-[#D4AF37] shadow-md">
+    <nav class="container mx-auto flex justify-between items-center px-6 py-4">
+      <a href="#home" class="text-3xl font-extrabold tracking-wide text-[#D4AF37]">Danver's Pizza</a>
+      <ul class="flex space-x-8 text-lg font-semibold">
+        <li><a href="#home" class="hover:text-[#A67C52] transition">Home</a></li>
+        <li><a href="#menu" class="hover:text-[#A67C52] transition">Menu</a></li>
+        <li><a href="#contact" class="hover:text-[#A67C52] transition">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="flex-1 flex flex-col items-center justify-center text-center px-6 md:px-20">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4 text-blue-800">Welcome to Danver's Restaurant</h1>
-    <p class="text-lg md:text-xl max-w-2xl mb-6">
-      Serving delicious meals made with love and the freshest ingredients.  
-      Experience great food, cozy ambiance, and excellent service.
+  <section id="home" class="flex-1 flex flex-col items-center justify-center text-center px-6 py-20">
+    <h1 class="text-5xl md:text-6xl font-black mb-6 text-[#D4AF37] drop-shadow-lg">
+      Wood-Fired Tradition, Crafted with Passion 🍕
+    </h1>
+    <p class="text-lg md:text-xl max-w-2xl mb-8 text-[#E5D3B3]">
+      At Danver's Pizza, we serve more than food—we serve heritage.  
+      Rustic flavors, authentic ingredients, and timeless craftsmanship.
     </p>
-    <a href="#menu" class="bg-amber-400 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-amber-500">
-      View Our Menu
+    <a href="#menu" class="bg-[#D4AF37] text-[#1B120C] px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-[#A67C52] transition">
+      Explore Our Menu
     </a>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="bg-white text-gray-800 py-12 px-6">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4 text-blue-700">About Us</h2>
-      <p class="max-w-3xl mx-auto text-lg">
-        At Danver's Restaurant, we believe that food brings people together.  
-        Our chefs prepare every dish with passion, offering a mix of local and international flavors.  
-        Whether it’s a family dinner, romantic date, or casual hangout with friends — we’ve got the perfect dish for you.
-      </p>
-    </div>
-  </section>
-
   <!-- Menu Section -->
-  <section id="menu" class="py-12 px-6">
+  <section id="menu" class="py-20 px-6 bg-[#2A1F14]">
     <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6 text-blue-700">Our Best Dishes</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-        <!-- 15 Dishes -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?pizza" alt="Classic Italian Pizza" class="w-full">
+      <h2 class="text-4xl font-bold mb-12 text-[#D4AF37] uppercase">Our Signature Pizzas</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+
+        <!-- Pizza Item 1 -->
+        <div class="bg-[#1B120C] border-2 border-[#D4AF37] rounded-xl overflow-hidden shadow-xl hover:scale-105 transition">
+          <img src="images/pepperoni.jpg" alt="Pepperoni" class="w-full h-40 object-cover">
           <div class="p-4">
-            <h3 class="font-bold text-lg">Classic Italian Pizza</h3>
-            <p class="text-gray-600 text-sm">Freshly baked with mozzarella, basil, and tomato sauce.</p>
+            <h3 class="font-bold text-xl text-[#D4AF37]">Pepperoni Pizza</h3>
+            <p class="text-sm text-[#E5D3B3]">Classic pepperoni with golden mozzarella.</p>
           </div>
         </div>
 
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?steak" alt="Grilled Beef Steak" class="w-full">
+        <!-- Pizza Item 2 -->
+        <div class="bg-[#1B120C] border-2 border-[#D4AF37] rounded-xl overflow-hidden shadow-xl hover:scale-105 transition">
+          <img src="images/margherita.jpg" alt="Margherita" class="w-full h-40 object-cover">
           <div class="p-4">
-            <h3 class="font-bold text-lg">Grilled Beef Steak</h3>
-            <p class="text-gray-600 text-sm">Juicy and tender, served with seasonal vegetables.</p>
+            <h3 class="font-bold text-xl text-[#D4AF37]">Margherita</h3>
+            <p class="text-sm text-[#E5D3B3]">Fresh basil, tomato, and mozzarella.</p>
           </div>
         </div>
 
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?pasta" alt="Creamy Alfredo Pasta" class="w-full">
+        <!-- Pizza Item 3 -->
+        <div class="bg-[#1B120C] border-2 border-[#D4AF37] rounded-xl overflow-hidden shadow-xl hover:scale-105 transition">
+          <img src="images/bbqchicken.jpg" alt="BBQ Chicken" class="w-full h-40 object-cover">
           <div class="p-4">
-            <h3 class="font-bold text-lg">Creamy Alfredo Pasta</h3>
-            <p class="text-gray-600 text-sm">Rich and creamy pasta topped with parmesan cheese.</p>
+            <h3 class="font-bold text-xl text-[#D4AF37]">BBQ Chicken</h3>
+            <p class="text-sm text-[#E5D3B3]">Smoky BBQ sauce, chicken, and onions.</p>
           </div>
         </div>
 
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?sushi" alt="Japanese Sushi" class="w-full">
+        <!-- Pizza Item 4 -->
+        <div class="bg-[#1B120C] border-2 border-[#D4AF37] rounded-xl overflow-hidden shadow-xl hover:scale-105 transition">
+          <img src="images/veggie.jpg" alt="Veggie Supreme" class="w-full h-40 object-cover">
           <div class="p-4">
-            <h3 class="font-bold text-lg">Japanese Sushi</h3>
-            <p class="text-gray-600 text-sm">Fresh salmon, tuna, and shrimp rolls with wasabi and soy sauce.</p>
+            <h3 class="font-bold text-xl text-[#D4AF37]">Veggie Supreme</h3>
+            <p class="text-sm text-[#E5D3B3]">Loaded with olives, peppers, and mushrooms.</p>
           </div>
         </div>
 
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?ramen" alt="Ramen" class="w-full">
+        <!-- Pizza Item 5 -->
+        <div class="bg-[#1B120C] border-2 border-[#D4AF37] rounded-xl overflow-hidden shadow-xl hover:scale-105 transition">
+          <img src="images/hawaiian.jpg" alt="Hawaiian" class="w-full h-40 object-cover">
           <div class="p-4">
-            <h3 class="font-bold text-lg">Authentic Ramen</h3>
-            <p class="text-gray-600 text-sm">Savory broth with noodles, pork, and soft-boiled egg.</p>
+            <h3 class="font-bold text-xl text-[#D4AF37]">Hawaiian</h3>
+            <p class="text-sm text-[#E5D3B3]">Sweet pineapple with smoky ham.</p>
           </div>
         </div>
 
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?fried-chicken" alt="Crispy Fried Chicken" class="w-full">
+        <!-- Pizza Item 6 -->
+        <div class="bg-[#1B120C] border-2 border-[#D4AF37] rounded-xl overflow-hidden shadow-xl hover:scale-105 transition">
+          <img src="images/meatlovers.jpg" alt="Meat Lovers" class="w-full h-40 object-cover">
           <div class="p-4">
-            <h3 class="font-bold text-lg">Crispy Fried Chicken</h3>
-            <p class="text-gray-600 text-sm">Golden brown, crunchy, and full of flavor.</p>
+            <h3 class="font-bold text-xl text-[#D4AF37]">Meat Lovers</h3>
+            <p class="text-sm text-[#E5D3B3]">Pepperoni, ham, bacon, and sausage.</p>
           </div>
         </div>
 
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?salad" alt="Caesar Salad" class="w-full">
+        <!-- Pizza Item 7 -->
+        <div class="bg-[#1B120C] border-2 border-[#D4AF37] rounded-xl overflow-hidden shadow-xl hover:scale-105 transition">
+          <img src="images/fourcheese.jpg" alt="Four Cheese" class="w-full h-40 object-cover">
           <div class="p-4">
-            <h3 class="font-bold text-lg">Caesar Salad</h3>
-            <p class="text-gray-600 text-sm">Fresh romaine lettuce with croutons and creamy dressing.</p>
+            <h3 class="font-bold text-xl text-[#D4AF37]">Four Cheese</h3>
+            <p class="text-sm text-[#E5D3B3]">Mozzarella, gouda, parmesan, and cheddar.</p>
           </div>
         </div>
 
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?shrimp" alt="Garlic Butter Shrimp" class="w-full">
+        <!-- Pizza Item 8 -->
+        <div class="bg-[#1B120C] border-2 border-[#D4AF37] rounded-xl overflow-hidden shadow-xl hover:scale-105 transition">
+          <img src="images/truffle.jpg" alt="Truffle Mushroom" class="w-full h-40 object-cover">
           <div class="p-4">
-            <h3 class="font-bold text-lg">Garlic Butter Shrimp</h3>
-            <p class="text-gray-600 text-sm">Succulent shrimp sautéed with garlic and butter.</p>
+            <h3 class="font-bold text-xl text-[#D4AF37]">Truffle Mushroom</h3>
+            <p class="text-sm text-[#E5D3B3]">Wild mushrooms with truffle cream.</p>
           </div>
         </div>
 
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?burger" alt="Cheese Burger" class="w-full">
+        <!-- Pizza Item 9 -->
+        <div class="bg-[#1B120C] border-2 border-[#D4AF37] rounded-xl overflow-hidden shadow-xl hover:scale-105 transition">
+          <img src="images/buffalo.jpg" alt="Buffalo Chicken" class="w-full h-40 object-cover">
           <div class="p-4">
-            <h3 class="font-bold text-lg">Cheese Burger</h3>
-            <p class="text-gray-600 text-sm">Classic beef burger topped with cheddar cheese.</p>
+            <h3 class="font-bold text-xl text-[#D4AF37]">Buffalo Chicken</h3>
+            <p class="text-sm text-[#E5D3B3]">Tangy buffalo sauce with grilled chicken.</p>
           </div>
         </div>
 
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?noodles" alt="Stir-fried Noodles" class="w-full">
+        <!-- Pizza Item 10 -->
+        <div class="bg-[#1B120C] border-2 border-[#D4AF37] rounded-xl overflow-hidden shadow-xl hover:scale-105 transition">
+          <img src="images/seafood.jpg" alt="Seafood Delight" class="w-full h-40 object-cover">
           <div class="p-4">
-            <h3 class="font-bold text-lg">Stir-fried Noodles</h3>
-            <p class="text-gray-600 text-sm">Wok-tossed noodles with vegetables and soy sauce.</p>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?tacos" alt="Mexican Tacos" class="w-full">
-          <div class="p-4">
-            <h3 class="font-bold text-lg">Mexican Tacos</h3>
-            <p class="text-gray-600 text-sm">Soft tortillas with beef, salsa, and guacamole.</p>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?bbq" alt="BBQ Ribs" class="w-full">
-          <div class="p-4">
-            <h3 class="font-bold text-lg">BBQ Ribs</h3>
-            <p class="text-gray-600 text-sm">Tender ribs glazed with smoky barbecue sauce.</p>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?fish" alt="Grilled Salmon" class="w-full">
-          <div class="p-4">
-            <h3 class="font-bold text-lg">Grilled Salmon</h3>
-            <p class="text-gray-600 text-sm">Perfectly grilled salmon fillet with lemon butter.</p>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?rice" alt="Chicken Fried Rice" class="w-full">
-          <div class="p-4">
-            <h3 class="font-bold text-lg">Chicken Fried Rice</h3>
-            <p class="text-gray-600 text-sm">Stir-fried rice with chicken, eggs, and vegetables.</p>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?dimsum" alt="Chinese Dimsum" class="w-full">
-          <div class="p-4">
-            <h3 class="font-bold text-lg">Chinese Dimsum</h3>
-            <p class="text-gray-600 text-sm">Steamed dumplings filled with pork and shrimp.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Drinks Section -->
-      <h2 class="text-3xl font-bold mt-12 mb-6 text-blue-700">Refreshing Drinks</h2>
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
-
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?lemonade" alt="Fresh Lemonade" class="w-full">
-          <div class="p-4">
-            <h3 class="font-bold text-lg">Fresh Lemonade</h3>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?milkshake" alt="Chocolate Milkshake" class="w-full">
-          <div class="p-4">
-            <h3 class="font-bold text-lg">Chocolate Milkshake</h3>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?coffee" alt="Hot Cappuccino" class="w-full">
-          <div class="p-4">
-            <h3 class="font-bold text-lg">Hot Cappuccino</h3>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?iced-tea" alt="Iced Tea" class="w-full">
-          <div class="p-4">
-            <h3 class="font-bold text-lg">Iced Tea</h3>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?smoothie" alt="Fruit Smoothie" class="w-full">
-          <div class="p-4">
-            <h3 class="font-bold text-lg">Fruit Smoothie</h3>
+            <h3 class="font-bold text-xl text-[#D4AF37]">Seafood Delight</h3>
+            <p class="text-sm text-[#E5D3B3]">Shrimp, calamari, and garlic cream base.</p>
           </div>
         </div>
 
@@ -218,21 +141,21 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="bg-blue-700 text-white py-12 px-6">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-      <p class="mb-2">📍 123 Food Street, Laguna, Philippines</p>
-      <p class="mb-2">📞 +63 912 345 6789</p>
-      <p class="mb-6">✉️ danversrestaurant@gmail.com</p>
-      <a href="mailto:danversrestaurant@gmail.com" class="bg-amber-400 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-amber-500">
-        Send an Email
+  <section id="contact" class="bg-[#1B120C] border-t-4 border-[#D4AF37] text-center py-16 px-6">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-4 text-[#D4AF37]">Visit or Contact Us</h2>
+      <p class="mb-2 text-[#E5D3B3]">📍 123 Pizza Street, Laguna, Philippines</p>
+      <p class="mb-2 text-[#E5D3B3]">📞 +63 912 345 6789</p>
+      <p class="mb-6 text-[#E5D3B3]">✉️ danverspizza@gmail.com</p>
+      <a href="mailto:danverspizza@gmail.com" class="bg-[#D4AF37] text-[#1B120C] px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-[#A67C52] transition">
+        Order Now
       </a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-center py-6 text-gray-300">
-    <p>&copy; <span id="year"></span> Danver's Restaurant. All rights reserved.</p>
+  <footer class="bg-[#0D0A07] text-center py-6 text-[#A67C52]">
+    <p>&copy; <span id="year"></span> Danver's Pizza. All rights reserved.</p>
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
