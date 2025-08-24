@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danver's Restaurant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gradient-to-br from-blue-50 via-white to-blue-100 text-gray-800 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-blue-700 text-white">
+    <nav class="container mx-auto flex justify-between items-center px-4 py-4">
+      <a href="#home" class="text-2xl font-bold">Danver's Restaurant</a>
+      <ul class="flex space-x-8 text-base">
+        <li><a href="#home" class="hover:text-amber-300">Home</a></li>
+        <li><a href="#about" class="hover:text-amber-300">About</a></li>
+        <li><a href="#menu" class="hover:text-amber-300">Menu</a></li>
+        <li><a href="#contact" class="hover:text-amber-300">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="flex-1 flex flex-col items-center justify-center text-center px-6 md:px-20">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 text-blue-800">Welcome to Danver's Restaurant</h1>
+    <p class="text-lg md:text-xl max-w-2xl mb-6">
+      Serving delicious meals made with love and the freshest ingredients.  
+      Experience great food, cozy ambiance, and excellent service.
+    </p>
+    <a href="#menu" class="bg-amber-400 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-amber-500">
+      View Our Menu
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-white text-gray-800 py-12 px-6">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4 text-blue-700">About Us</h2>
+      <p class="max-w-3xl mx-auto text-lg">
+        At Danver's Restaurant, we believe that food brings people together.  
+        Our chefs prepare every dish with passion, offering a mix of local and international flavors.  
+        Whether it’s a family dinner, romantic date, or casual hangout with friends — we’ve got the perfect dish for you.
+      </p>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-12 px-6">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 text-blue-700">Our Best Dishes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+          <img src="https://source.unsplash.com/400x250/?pizza" alt="Pizza" class="w-full">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Classic Italian Pizza</h3>
+            <p class="text-gray-600 text-sm">Freshly baked with mozzarella, basil, and tomato sauce.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+          <img src="https://source.unsplash.com/400x250/?steak" alt="Steak" class="w-full">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Grilled Beef Steak</h3>
+            <p class="text-gray-600 text-sm">Juicy and tender, served with seasonal vegetables.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+          <img src="https://source.unsplash.com/400x250/?pasta" alt="Pasta" class="w-full">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Creamy Alfredo Pasta</h3>
+            <p class="text-gray-600 text-sm">Rich and creamy pasta topped with parmesan cheese.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-blue-700 text-white py-12 px-6">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+      <p class="mb-2">📍 123 Food Street, Laguna, Philippines</p>
+      <p class="mb-2">📞 +63 912 345 6789</p>
+      <p class="mb-6">✉️ danversrestaurant@gmail.com</p>
+      <a href="mailto:danversrestaurant@gmail.com" class="bg-amber-400 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-amber-500">
+        Send an Email
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center py-6 text-gray-300">
+    <p>&copy; <span id="year"></span> Danver's Restaurant. All rights reserved.</p>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+</body>
+</html>
